@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack Automation" verbose="1">
+    <test name="Vytrack Smoke Test">
+
+
+        <!-- <packages> run to package
+            <package name="com.cybertek.tests.day14_extent_reports"></package>
+            <package name="com.cybertek.tests.day11_webtables"></package>
+            <package name=".*"></package> run everything(all packeges) - (BATCH RUN) -->
+        <!--  </packages> -->
+
+
+          <classes>
+              <!--  <class name = "com.cybertek.tests.day14_extent_reports.NegativeLoginTestWithReport"></class> to run class-->
+              <class name = "com.cybertek.tests.day11_webtables.WebTablesExample">
+                  <methods>
+                      <!-- <include name="getAllHeaders"></include>  to run test case -->
+                      <!--<include name="printTableSize"></include> -->
+                      <exclude name="getAllCellInOneRow"></exclude>
+                  </methods>
+              </class>
+          </classes>
+
+     </test>
+ </suite>
+
+
